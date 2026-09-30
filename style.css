@@ -13,3 +13,47 @@
 .reveal-head{animation:birthday-arrival .5s ease-out both}
 @keyframes birthday-arrival{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.reveal-head{animation:none}}
+
+/* Tilted phones use the full browser viewport instead of the desktop frame. */
+@media (orientation:landscape) and (max-height:600px) and (pointer:coarse), (orientation:landscape) and (display-mode:fullscreen), (orientation:landscape) and (display-mode:standalone){
+  html,body{width:100%;height:100%;overflow:hidden;overscroll-behavior:none}
+  body{display:block;padding:0;min-height:100svh}
+  .game-shell{position:relative;width:100%;max-width:none;height:100svh;height:100dvh;margin:0}
+  .stage{width:100%;height:100%;aspect-ratio:auto;border:0;box-shadow:none}
+  #scene{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:center bottom}
+  .edition,.frame-bottom,.portrait-note{display:none}
+  .frame-top{position:absolute;top:calc(env(safe-area-inset-top,0px) + 8px);right:max(12px,env(safe-area-inset-right,0px));z-index:10;margin:0;padding:0;pointer-events:none}
+  .audio-button{pointer-events:auto;background:#150b23e8;font-size:10px;padding:7px 10px}
+  .title-panel,.ending{padding:16px max(20px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px))}
+  .title-panel .eyebrow,.ending .eyebrow{font-size:10px;margin:0 0 8px}
+  .title-panel h1{font-size:clamp(36px,12dvh,56px)}
+  .title-subtitle{font-size:22px;margin:8px 0 12px}
+  .action{font-size:24px;min-height:44px;padding:7px 22px}
+  .controls{font-size:11px;line-height:1.4;margin:12px 0 0}
+  .ending h2{font-size:clamp(32px,12dvh,52px)}
+  .until{font-size:24px;margin:8px 0}
+  .signature{font-size:12px;margin:6px 0 12px}
+  .ending .action{font-size:23px;padding:7px 22px}
+  .made{font-size:10px;margin:10px 0 0}
+  .dialogue{left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:max(8px,env(safe-area-inset-bottom,0px));min-height:0;padding:10px 16px}
+  .speaker{font-size:11px}
+  .dialogue p{font-size:24px;line-height:1.1;margin:5px 0 32px}
+  .continue{font-size:11px;min-height:40px;bottom:0}
+  .cut-controls{bottom:max(8px,env(safe-area-inset-bottom,0px));width:min(600px,85%)}
+  .cut-controls p{font-size:12px;margin-bottom:6px}
+  .reveal-head{top:calc(env(safe-area-inset-top,0px) + 12px)}
+  .reveal-head .eyebrow{font-size:10px;margin-bottom:5px}
+  .reveal-head h2{font-size:clamp(30px,10dvh,42px)}
+  .reveal-head h2 br{display:none}
+  .reveal-head p:last-child{font-size:21px;margin-top:5px}
+  .scene-heading{top:calc(env(safe-area-inset-top,0px) + 12px);font-size:30px}
+  .progress{top:calc(env(safe-area-inset-top,0px) + 52px);right:max(12px,env(safe-area-inset-right,0px));font-size:28px}
+}
+
+.view-controls{display:flex;gap:6px;align-items:center;pointer-events:auto}
+#fullscreen-help{max-width:min(360px,90vw);padding:24px;background:#150c25;color:var(--cream);border:2px solid var(--gold);text-align:center}
+#fullscreen-help::backdrop{background:#100919c9}
+#fullscreen-help h2{font-size:32px}
+#fullscreen-help p{font:13px/1.6 var(--mono);margin:18px 0}
+#fullscreen-help .action{font-size:24px}
+@media(max-width:600px){.frame-top{gap:8px}.frame-top .edition{flex:1;min-width:0;line-height:1.4}.view-controls{gap:4px;flex-shrink:0}.view-controls .audio-button{padding:8px 6px}.frame-top .edition{font-size:9px;letter-spacing:0}.edition span{margin:0 3px}}

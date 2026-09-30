@@ -1,0 +1,9 @@
+{
+  "name": "The Man Hater Cave",
+  "short_name": "Birthday Cave",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "background_color": "#150c25",
+  "theme_color": "#150c25"
+}

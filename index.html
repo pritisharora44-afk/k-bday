@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Birthday Cave"><link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#150c25"><title>The Man Hater Cave · Happy Birthday, Krutika</title>
   <meta name="description" content="An ancient birthday tradition. A suspiciously delicious ritual. One very lucky boy.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23150c25' d='M0 0h32v32H0z'/%3E%3Cpath fill='%23eaaa60' d='M13 5h6v6h-6zM10 12h12v16H10z'/%3E%3Cpath fill='%23885dde' d='M13 16h6v10h-6z'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=5"><script src="audio.js?v=5" defer></script><script src="game.js?v=6" defer></script>
+  <link rel="stylesheet" href="style.css?v=9"><script src="audio.js?v=5" defer></script><script src="game.js?v=6" defer></script><script src="screen.js?v=9" defer></script>
 </head>
 <body>
   <main class="game-shell">
-    <header class="frame-top"><span class="edition">BIRTHDAY RITUAL <span aria-hidden="true">✦</span> SEPTEMBER 30</span><button class="audio-button" id="sound" aria-label="Turn sound on" aria-pressed="false">SOUND OFF</button></header>
+    <header class="frame-top"><span class="edition">BIRTHDAY RITUAL <span aria-hidden="true">✦</span> SEPTEMBER 30</span><div class="view-controls"><button class="audio-button" id="sound" aria-label="Turn sound on" aria-pressed="false">SOUND OFF</button><button class="audio-button" id="fullscreen" aria-label="Enter fullscreen" aria-pressed="false" hidden>FULLSCREEN</button></div></header>
     <section class="stage" aria-label="The Man Hater Cave birthday game">
       <canvas id="scene" width="640" height="360" aria-label="Animated pixel-art dungeon"></canvas>
       <canvas id="frosting" class="frosting-canvas" width="640" height="360" aria-hidden="true" hidden></canvas>
@@ -28,5 +29,6 @@
     <p class="portrait-note">Works in portrait. Rotate for the full dungeon experience.</p>
     <p class="sr-only" id="announcer" role="status" aria-live="polite"></p>
   </main>
+  <dialog id="fullscreen-help" aria-labelledby="fullscreen-help-title"><h2 id="fullscreen-help-title">A little more screen.</h2><p id="fullscreen-help-text"></p><button class="action" id="fullscreen-help-close">GOT IT</button></dialog>
 </body>
 </html>
