@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#150c25"><title>The Man Hater Cave · Happy Birthday, Krutika</title>
+  <meta name="description" content="An ancient birthday tradition. A suspiciously delicious ritual. One very lucky boy.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23150c25' d='M0 0h32v32H0z'/%3E%3Cpath fill='%23eaaa60' d='M13 5h6v6h-6zM10 12h12v16H10z'/%3E%3Cpath fill='%23885dde' d='M13 16h6v10h-6z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css?v=5"><script src="audio.js?v=5" defer></script><script src="game.js?v=6" defer></script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="frame-top"><span class="edition">BIRTHDAY RITUAL <span aria-hidden="true">✦</span> SEPTEMBER 30</span><button class="audio-button" id="sound" aria-label="Turn sound on" aria-pressed="false">SOUND OFF</button></header>
+    <section class="stage" aria-label="The Man Hater Cave birthday game">
+      <canvas id="scene" width="640" height="360" aria-label="Animated pixel-art dungeon"></canvas>
+      <canvas id="frosting" class="frosting-canvas" width="640" height="360" aria-hidden="true" hidden></canvas>
+      <div class="vignette" aria-hidden="true"></div><div class="scanlines" aria-hidden="true"></div>
+      <div class="scene-heading" id="scene-heading" hidden>THE MAN HATER CAVE</div>
+      <div class="progress" id="progress" hidden><span id="cut-number">0</span><span class="progress-total"> / 20</span><div class="meter"><div id="meter-fill"></div></div></div>
+      <div class="title-panel" id="title-panel"><p class="eyebrow">FOR KRUTIKA</p><h1>THE MAN<br><span>HATER CAVE</span></h1><p class="title-subtitle">a birthday ritual</p><button class="action" id="enter" disabled>LIGHTING THE CANDLES…</button><p class="controls">Click, tap, or press Space to play.</p></div>
+      <div class="dialogue" id="dialogue" hidden><span class="speaker" id="speaker"></span><p id="dialogue-text"></p><button id="next" class="continue" aria-label="Continue dialogue">CONTINUE <span aria-hidden="true">◆</span></button></div>
+      <div class="cut-controls" id="cut-controls" hidden><p id="cut-hint">The council appreciates enthusiasm.</p><button class="action cut-button" id="cut">CUT THE CAKE</button></div>
+      <div class="red-text" id="red-text" hidden></div>
+      <div class="reveal-head" id="reveal-head" hidden><p class="eyebrow">THE COUNCIL HAS SPOKEN</p><h2>HAPPY BIRTHDAY,<br><span>KRUTIKA!</span></h2><p>Another successful year of hating men.</p></div>
+      <div class="ending" id="ending" hidden><p class="eyebrow">BY ORDER OF THE BIRTHDAY GIRL</p><h2>SENTENCE<br><span>POSTPONED.</span></h2><p class="until">Until your next birthday.</p><p class="signature">— Pritish</p><button class="action" id="replay">PLAY AGAIN</button><p class="made">Made with questionable judgment.</p></div>
+      <div id="asset-error" class="asset-error" hidden><p>The candles need another match.</p><button class="action" id="retry">TRY AGAIN</button></div>
+    </section>
+    <footer class="frame-bottom"><span id="chapter">PROLOGUE</span><span>A VERY QUESTIONABLE TRADITION</span></footer>
+    <p class="portrait-note">Works in portrait. Rotate for the full dungeon experience.</p>
+    <p class="sr-only" id="announcer" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

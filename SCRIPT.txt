@@ -1,0 +1,89 @@
+THE MAN HATER CAVE — EDITABLE GAME SCRIPT
+For Krutika • September 30
+
+HOW TO EDIT
+Change any wording below and send this file back to me.
+Keep the scene numbers and speaker labels so I can map your edits to the game.
+Lines in [square brackets] describe the action. You can edit those too.
+Add or remove dialogue lines freely. No code editing required.
+
+SCENE 1 — TITLE / PROLOGUE
+[A candlelit purple cave. The music starts when she enters.]
+
+Eyebrow: FOR KRUTIKA
+Title: THE MAN HATER CAVE
+Subtitle: a birthday ritual
+Button: ENTER THE CAVE
+
+SCENE 2 — THE INVITATION
+[The mysterious hooded guide waits in a warm, candlelit corridor.]
+
+THE GUIDE: Follow me, birthday girl. The council has been expecting you.
+
+SCENE 3 — THE COUNCIL
+[A doorway stands ahead. The guide is still wearing the same hooded costume.]
+
+Heading: THE MAN HATER CAVE
+THE GUIDE: Welcome to the Man Hater Cave. Membership has its privileges.
+
+[The door opens with a stone rumble.]
+
+SCENE 4 — THE TRADITION
+[The boy lies flat on his back on the altar, tied with pink ropes.
+The hooded guide stands beside the altar.]
+
+THE GUIDE: Take this ceremonial knife.
+THE GUIDE: Tradition demands that we cut the cake.
+THE BOY: ...what cake?
+
+SCENE 5 — ENTHUSIASM
+[She taps the cut button 20 times. The knife swings, red frosting splashes,
+and the music gets more energetic. The counter is visible.]
+
+Button at 0–2 cuts: CUT THE CAKE
+Button at 3–6 cuts: CUT HARDER
+Button at 7–10 cuts: HE CAN TAKE IT
+Button at 11–15 cuts: MAN HATER MODE ACTIVATED
+Button at 16–20 cuts: ABSOLUTELY UNHINGED
+
+Hint at 0–6 cuts: The council appreciates enthusiasm.
+Hint at 7–15 cuts: A perfectly reasonable birthday activity.
+Hint at 16–20 cuts: You seem suspiciously good at this.
+
+SCENE 6 — A MOMENT OF SILENCE
+[The screen turns completely red. All music and effects stop.]
+
+After 2 seconds: ...
+After 2.7 seconds: Happy Birthday.
+[After 3.9 seconds, the red screen clears into the reveal.]
+
+SCENE 7 — PLAUSIBLE DENIABILITY / BIRTHDAY REVEAL
+[The boy sits up, unharmed. A cake appears beside him.
+The guide pulls her hood back, revealing Taylor Swift. Her purple-and-gold
+costume and cloak stay the same. Confetti falls; birthday music plays.]
+
+Eyebrow: THE COUNCIL HAS SPOKEN
+Heading: HAPPY BIRTHDAY, KRUTIKA!
+Subtitle: Another successful year of hating men.
+
+THE POP STAR: Another successful year of hating men.
+THE BOY: I'm literally right here.
+THE POP STAR: He did ask me to tell you he's very glad you exist.
+THE COUNCIL: Unfortunately, the boy survived.
+
+Hint: Your mercy is appreciated. Your judgment is questionable.
+Button: SPARE HIM FOR ANOTHER YEAR
+
+SCENE 8 — CASE CLOSED / ENDING
+[The birthday girl grants mercy. The ending fills the screen.]
+
+Eyebrow: BY ORDER OF THE BIRTHDAY GIRL
+Heading: SENTENCE POSTPONED.
+Line: Until your next birthday.
+Signature: — Pritish
+Button: PLAY AGAIN
+Footer: Made with questionable judgment.
+
+OPTIONAL NOTES FOR THE NEXT PASS
+[Write any changes to the actions, timing, music, or visuals here.]
+
