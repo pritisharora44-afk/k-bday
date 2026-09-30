@@ -1,5 +1,7 @@
-# The Man Hater Cave
 
+#The ManHater Project
+
+## The Man Hater Cave 
 A self-contained pixel-art birthday game for Krutika.
 
 ## Play locally
